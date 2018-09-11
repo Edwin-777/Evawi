@@ -1,0 +1,105 @@
+#primaryHeader
+	position: absolute
+	top: 0
+	right: 0
+	width: 100%
+	z-index: 999
+	&:before
+		content: ""
+		display: block
+		width: 100vw
+		background: rgba(0, 0, 0, 0)
+		position: fixed
+		top: 0
+		left: 0
+		height: 100vh
+		z-index: 1
+		transition: all .5s
+		visibility: hidden
+	&.activeMenu:before 
+		background: rgba(0, 0, 0, 0.5)
+		visibility: visible
+	#primaryMenu
+		position: fixed
+		top: 0
+		left: 0
+		background: #fff
+		height: 100vh
+		width: 351px
+		left: -351px
+		box-shadow: 5px 10px 10px rgba(0,0,0,.1)
+		clip-path: polygon(0 0, 100% 0%, 72% 100%, 0 100%)
+		z-index: 999
+		transition: all .5s
+		&.activeMenu
+			left: 0
+		#hiddenMenu
+			display: block
+			cursor: pointer
+			text-align: center
+			width: 32px
+			margin-left: 86px
+			margin-top: 20px
+			margin-bottom: 35px
+			img
+				display: block
+				width: 100%
+		ul
+			list-style: none
+			padding: 0
+
+			li
+				margin-bottom: 18px
+				a
+					font-size: 18px
+					color: $txtColor
+					text-decoration: none
+					padding-left: 86px
+					position: relative
+					transition: all .5s
+					font-family: $fontMenu
+					&:before
+						content: ""
+						position: absolute
+						width: 0px
+						height: 2px
+						background: $colorP
+						left: 0
+						top: 47%
+						transition: all .5s
+					&:hover
+						color: $colorP
+						&:before
+							width: 58px
+					&.active
+						color: $colorP
+						&:before
+							width: 58px
+	.toggleNav
+		display: inline-block
+		margin-top: 31px
+		text-align: center
+		margin-left: 49px
+		cursor: pointer
+		i
+			font-size: 23px
+	#secondaryMenu
+		display: inline-block
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 20px
+				a
+					text-decoration: none
+					color: #1a1a1d
+					font-family: $fontMenu
+					&:hover
+						text-decoration: none
+	#search
+		text-align: right
+		margin-top: 37px
+		i
+			color: #fff
+			font-size: 23px
+			margin-right: 29px

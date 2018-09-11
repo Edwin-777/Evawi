@@ -1,0 +1,315 @@
+@import 'config'
+@import 'mixin'
+@import 'helpers'
+
+#contenPrimary
+	+table()
+		margin-top: 150px
+#primarySlide
+	+table()
+		display: none
+	.btnSlide
+		position: absolute
+		bottom: -5px
+		left: 9%
+		text-align: center
+		.txt
+			display: inline-block
+			background: $colorP
+			color: #fff
+			vertical-align: top
+			padding: 27px 42px
+		.img
+			display: inline-block
+			background: #fff
+			padding: 9px 6px
+	.slide_1
+		+bgSection("../img/slide1/bg.jpg", cover, false)
+		height: 82vh
+		position: relative
+		.ele_1
+			display: block
+			width: 100%
+			position: absolute
+			max-width: 51%
+			bottom: 0
+			left: 12%
+		.ele_2
+			display: block
+			width: 47%
+			height: 57%
+			background: #05c0e3
+			float: right
+#filterModules
+	margin: 79px 0px 56px 0px
+	ul
+		padding: 0
+		text-align: center
+		li
+			display: inline-block
+			padding: 0px 30px
+			text-align: center
+			+table()
+				display: block
+				margin-bottom: 38px
+			a
+				color: $txtColor
+				text-decoration: none
+				transition: all .5s
+				border-bottom: 2px solid transparent
+				padding-bottom: 8px
+				&.active
+					border-bottom: 2px solid $colorP
+					color: $colorP
+					font-weight: bold
+				&:hover
+					text-decoration: none
+					border-bottom: 2px solid $colorP
+					font-weight: bold
+					color: $colorP
+.modulesWrapp
+	.module
+		padding: 0
+		background: $colorP
+		overflow: hidden
+		transition: all .5s
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			width: 44px
+			height: 4px
+			background: $colorS
+			bottom: 0
+			margin: 0px auto
+			right: 0
+			left: 0
+		.bgModule
+			display: block
+			width: 100%
+			transition: all .5s
+		.arrow
+			display: block
+			width: 46px
+			position: absolute
+			z-index: 999
+			top: -16px
+			right: 13px
+			opacity: 0
+			transition: all .5s
+			img
+				display: block
+				width: 100%
+		.info
+			position: absolute
+			bottom: 0
+			width: 100%
+			display: block
+			padding: 0px 18px
+			text-align: center
+			height: 52%
+			padding-top: 127px
+			transition: all .5s
+			h2
+				color: #fff
+				font-size: 20px
+				margin: 0
+				margin-bottom: 8px
+				font-family: $fontS
+			p
+				color: #fff
+				font-size: 13px
+				padding: 0
+				opacity: 0
+				transition: all .5s
+			a
+				background: $colorS
+				display: block
+				position: absolute
+				bottom: -61px
+				left: 0
+				width: 100%
+				color: #fff
+				padding: 20px 0px
+				font-size: 15px
+				transition: all .5s
+				transition-delay: .3s
+				&:hover
+					text-decoration: none
+		&:hover
+			.bgModule
+				opacity: .5
+			.arrow
+				top: 12px
+				opacity: 1
+			.info
+				height: 100%
+				p
+					opacity: 1
+				a
+					bottom: 0
+	&.inactive
+		display: none
+#bannerModules
+	+bgSection("../img/bannerModulesHome.jpg", cover, true)
+	margin-bottom: 100px
+	margin-top: 100px	
+	+table()
+		margin-top: 0
+	.item_1
+		bottom: -70px
+		+table()
+			bottom: 0px
+			margin-top: 10px
+	.item_2
+		margin-top: -70px
+		+table()
+			margin-top: 0px
+			margin-top: 10px
+	.item_3
+		bottom: -70px
+		+table()
+			bottom: 0px
+			margin-top: 10px
+			margin-bottom: 10px
+	.item
+		background: $colorS
+		padding-bottom: 1px
+		transition: all .5s
+		img
+			width: 100%
+			max-width: 139px
+		h2
+			color: #fff
+			text-align: center
+		a
+			display: block
+			width: 100%
+			max-width: 182px
+			background: $colorP
+			margin: 35px auto
+			text-align: center
+			color: #fff
+			padding: 10px 0px
+			border-radius: 60px
+			transition: all .5s
+			&:hover
+				color: #fff
+				text-decoration: none
+		&:hover
+			background: $colorP
+			a
+				background: $colorS
+.resources
+	.item
+		background: $colorS
+		margin: 0
+		+table()
+			margin-bottom: 15px
+		i
+			color: rgba(0, 0, 0, 0.28)
+			position: absolute
+			right: 9px
+			top: 8px
+			font-size: 22px
+			transition: all .5s
+		h2
+			font-size: 21px
+			color: #fff
+			margin-top: 42px
+		&:hover
+			i
+				color: $colorP
+.resourcesPost
+	margin-top: 30px
+	.mod_1
+		display: flex
+		+table()
+			display: block
+		.mod_1_1
+			background: $colorP
+			padding-left: 19px
+			h2
+				color: #fff
+				margin-top: 92%
+				+table()
+					margin-top: 0
+					padding: 10px 0px
+			a
+				color: #fff
+				transition: all .5s
+				+table()
+					display: block
+					margin-bottom: 10px
+				&:hover
+					text-decoration: none
+					border-left: 3px solid $colorS
+					padding-left: 20px
+		.mod_1_2
+			padding: 0
+			a
+				position: absolute
+				top: 16px
+				background: #fff
+				color: #1a1a1d
+				right: 26px
+				padding: 10px 19px
+				border-radius: 6px
+				transition: all .5s
+				&:hover
+					background: $colorP
+					color: #fff
+					text-decoration: none
+	.mod_2
+		margin-top: 10px
+		.mod_2_1
+			padding: 0
+			padding-right: 5px
+			+table()
+				padding: 15px
+			h2
+				color: #fff
+				position: absolute
+				top: 15px
+				padding-left: 31px
+				border-left: 3px solid $colorP
+			a
+				color: #fff
+				position: absolute
+				top: 68px
+				left: 35px
+		.mod_2_2
+			padding: 0
+			padding-left: 8px
+			+table()
+				padding: 15px
+			i
+				color: #fff
+				position: absolute
+				bottom: 12px
+				font-size: 68px
+				left: 26px
+			span
+				color: #fff
+				position: absolute
+				bottom: 35px
+				left: 96px
+	.mod_3
+		.slick-dots
+			bottom: 8px
+			li
+				button
+					&:before
+						color: #fff
+	.mod_4
+		h2
+			color: #1a1a1d
+			margin-top: 25px
+			font-size: 23px
+		a
+			color: #1a1a1d
+			text-decoration: none
+			&:hover
+				text-decoration: none
+
+@import 'modules/index'

@@ -1,0 +1,88 @@
+$fondo: transparent
+$fondoHover: #fff
+$colorIcon: #fff
+$colorIconHover: #2c4058
+a
+	&[href*="facebook"], &[href*="instagram"], &[href*="youtube"], &[href*="pinterest"], &[href*="twitter"]
+		position: relative
+		color: transparent
+		text-decoration: none
+#navRedes
+	a
+		&[href*="facebook"]:before
+			content: "\f09a"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			text-align: center
+			display: block
+			margin: 0px auto
+		&[href*="instagram"]:before
+			content: "\f16d"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			text-align: center
+			display: block
+			margin: 0px auto
+		&[href*="youtube"]:before
+			content: "\f16a"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			text-align: center
+			display: block
+			margin: 0px auto
+		&[href*="pinterest"]:before
+			content: "\f0d2"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			text-align: center
+			display: block
+			margin: 0px auto
+		&[href*="twitter"]:before
+			content: "\f099"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			text-align: center
+			display: block
+			margin: 0px auto
+	ul
+		list-style: none
+		padding: 0
+		margin-bottom: 0px
+	li
+		position: relative
+		display: inline-block
+		a
+			display: block
+			width: 43px
+			height: 43px
+			z-index: 1
+	ul li a
+		&:before
+			background: $fondo
+			color: $colorIcon
+			width: 37px
+			height: 37px
+			font-size: 22px
+			border-radius: 50%
+			display: block
+			padding-top: 2px
+			border: 1px solid #fff
+			transition: all .5s
+		&:hover:before
+			color: $colorIconHover
+			background: $fondoHover

@@ -1,0 +1,313 @@
+extends partials/header.pug
+block vars
+	- var titlePage = 'Home Page';
+block content
+	// main
+	main#contenPrimary
+		#primarySlide
+			.slide_1
+				.ele_2(data-animation-in="fadeIn", data-delay-in="1")
+				img.ele_1(src="img/slide1/ele_1.jpg", data-animation-in="fadeInLeft",alt="")
+				.btnSlide(data-animation-in="fadeInUp", data-delay-in="2")
+					a(href="#")
+						span.txt LEARN MORE
+						span.img
+							img(src="img/btnSlide.png", alt="")
+		.container
+			.row
+				.col-md-12
+					#filterModules
+						ul
+							li
+								a.active(href="#", data-panel="conference") CONFERENCE
+							li
+								a(href="#", data-panel="regional") REGIONAL TRAINING
+								li
+									a(href="#", data-panel="training") TRAINING
+		.container.modulesWrapp.module-conference
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_03.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 REGIONAL
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_04.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 PAST CONFERENCES
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_05.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 TESTIMONIALS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_06.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 HANDOUTS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_08.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 INSTITUTE
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_09.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 ACCREDITATION
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_10.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 AWARDS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_11.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 LIBRARY
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+		.container.modulesWrapp.module-regional.inactive
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_04.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 PAST CONFERENCES
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_06.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 HANDOUTS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_05.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 TESTIMONIALS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_03.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 REGIONAL
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_08.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 INSTITUTE
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_09.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 ACCREDITATION
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_10.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 AWARDS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_11.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 LIBRARY
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+		.container.modulesWrapp.module-training.inactive
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_06.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 HANDOUTS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_04.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 PAST CONFERENCES
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_03.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 REGIONAL
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE			
+				.col-md-3.module
+					img.bgModule(src="img/module_home_05.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 TESTIMONIALS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				
+			.row
+				.col-md-3.module
+					img.bgModule(src="img/module_home_08.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 INSTITUTE
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_09.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 ACCREDITATION
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_10.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 AWARDS
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+				.col-md-3.module
+					img.bgModule(src="img/module_home_11.jpg", alt="")
+					a.arrow(href="#")
+						img(src="img/moduleArrow.png", alt="")
+					.info
+						h2 LIBRARY
+						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
+						a(href="#") READ MORE
+		.container
+			.row
+				.col-md-12
+					a.btnGeneral(href="#") EXPLORE MORE
+		#bannerModules
+			.container
+				.row
+					.col-md-4.item_1
+						.item
+							img.img-responsive.center-block(src="img/bannerModule_03.png", alt="")
+							h2 CALENDAR
+							a(href="#") READ MORE
+					.col-md-4.item_2
+						.item
+							img.img-responsive.center-block(src="img/bannerModule_06.png", alt="")
+							h2 SHOP
+							a(href="#") READ MORE
+					.col-md-4.item_3
+						.item
+							img.img-responsive.center-block(src="img/bannerModule_09.png", alt="")
+							h2 DONATE
+							a(href="#") READ MORE
+		.container
+			.row
+				.col-md-12
+					h2.generalTitle RESOURCES
+		.container.resources
+			.row
+				.col-md-4
+					a(href="#")
+						.row.item
+							.col-md-6.col-xs-6.col-sm-6.noPadding
+								img.img-responsive.center-block(src="img/resources_03.jpg", alt="")
+							.col-md-6.col-xs-6.col-sm-6
+								i.fa.fa-plus-circle(aria-hidden="true")
+								h2 BEST PRACTICES
+				.col-md-4
+					a(href="#")
+						.row.item
+							.col-md-6.col-xs-6.col-sm-6.noPadding
+								img.img-responsive.center-block(src="img/resources_05.jpg", alt="")
+							.col-md-6.col-xs-6.col-sm-6
+								i.fa.fa-plus-circle(aria-hidden="true")
+								h2 FORENCE COMPLIANCE
+				.col-md-4
+					a(href="#")
+						.row.item
+							.col-md-6.col-xs-6.col-sm-6.noPadding
+								img.img-responsive.center-block(src="img/resources_07.jpg", alt="")
+							.col-md-6.col-xs-6.col-sm-6
+								i.fa.fa-plus-circle(aria-hidden="true")
+								h2 WEBINARS ARCHIVE
+		.container.resourcesPost
+			.row
+				.col-md-8
+					.row.mod_1
+						.col-md-4.mod_1_1
+							h2 Trainers <br>Consultants
+							a(href="#") READ MORE
+						.col-md-8.mod_1_2
+							img.img-responsive.center-block(src="img/resousesPost__03.jpg", alt="")
+							a(href="") RESOURCES
+					.row.mod_2
+						.col-md-6.mod_2_1
+							img.img-responsive.center-block(src="img/resousesPost__09.jpg", alt="")
+							h2 Making a diference
+							a(href="#") READ MORE
+						.col-md-6.mod_2_2
+							img.img-responsive.center-block(src="img/resousesPost__11.jpg", alt="")
+							a(href="#")
+								i.fa.fa-play-circle-o(aria-hidden="true")
+								span TESTIMONIALS
+				.col-md-4
+					.mod_3
+						.item
+							a(href="#")
+								img.img-responsive.center-block(src="img/resousesPost__05.jpg", alt="")
+						.item
+							a(href="#")
+								img.img-responsive.center-block(src="img/resousesPost__05.jpg", alt="")
+					.mod_4
+						h2 Request technical assistance
+						a(href="#") READ MORE
+	// End Main
+	include partials/footer.pug

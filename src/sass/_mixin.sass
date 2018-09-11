@@ -1,0 +1,55 @@
+=table()
+	@media(max-width:991px)
+		@content
+=bgSection($url, $size, $parralx)
+	@if $url != ""
+		background-image: url($url)
+	background-size: $size
+	background-position: center center
+	@if $parralx == true
+		background-attachment: fixed
+	background-repeat: no-repeat
+=slickArrows($colorIcon,$bgIcon,$circle)
+	.slick-next:before
+		content: "\f105"
+		display: block
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		text-decoration: inherit
+		font-size: 25px
+		background: $bgIcon
+		opacity: 1
+		color: $colorIcon
+		@if $circle
+			border-radius: 50%
+			height: 30px
+			width: 30px
+			text-align: center
+			padding-left: 3px
+			padding-top: 1px
+			border: 1px solid #fff
+	.slick-prev:before
+		content: "\f104"
+		display: block
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		text-decoration: inherit
+		font-size: 25px
+		background: $bgIcon
+		opacity: 1
+		color: $colorIcon
+		@if $circle
+			border-radius: 50%
+			height: 30px
+			width: 30px
+			text-align: center
+			border: 1px solid #fff
+			padding-top: 1px
+			padding-right: 1px
+	.slick-next
+		// right: 30px
+	.slick-prev
+		// left: 14px
+		// z-index: 9
