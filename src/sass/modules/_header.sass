@@ -3,7 +3,7 @@
 	top: 0
 	right: 0
 	width: 100%
-	z-index: 999
+	z-index: 99999
 	&:before
 		content: ""
 		display: block
@@ -75,6 +75,28 @@
 						color: $colorP
 						&:before
 							width: 58px
+					&[href="#"]:after
+						content: "\f107"
+						font-family: FontAwesome
+						font-style: normal
+						font-weight: normal
+						text-decoration: inherit
+						position: absolute
+						right: -24px
+				ul
+					background: $colorP
+					padding: 7px 0px 7px 16px
+					display: none
+					li
+						margin-bottom: 0px
+						margin: 7px 0px
+						a
+							color: #fff
+							&:hover
+								color: #fff
+								&:before
+									width: 58px
+									background: #fff
 	.toggleNav
 		display: inline-block
 		margin-top: 31px

@@ -5,41 +5,110 @@
 #contenPrimary
 	+table()
 		margin-top: 150px
+#socialHome
+	position: absolute
+	top: 133px
+	left: 4.2%
+	z-index: 9999
+	text-align: center
+	width: 20px
+	ul 
+		list-style: none
+		padding: 0
+		li
+			display: block
+			margin: 13px 0px
+			a
+				color: #000
+				font-size: 19px
+				transition: all .5s
+				&:hover
+					text-decoration: none
+					color: $colorP
+
+
 #primarySlide
+	+bgSection("../img/slide1/bg.jpg", cover, false)
+	display: block
+	position: relative
+	top: 0
+	padding-top: 232px
+	padding-left: 12%
 	+table()
 		display: none
-	.btnSlide
-		position: absolute
-		bottom: -5px
-		left: 9%
-		text-align: center
-		.txt
-			display: inline-block
-			background: $colorP
-			color: #fff
-			vertical-align: top
-			padding: 27px 42px
-		.img
-			display: inline-block
-			background: #fff
-			padding: 9px 6px
-	.slide_1
-		+bgSection("../img/slide1/bg.jpg", cover, false)
-		height: 82vh
-		position: relative
-		.ele_1
-			display: block
+	.wrappslide
+		display: block
+		width: 100%
+		max-width: 800px
+		.item
+			img
+				display: block
+				width: 100%
+			.wrappTxt
+				position: absolute
+				top: 0
+				padding: 24px
+				width: 100%
+				max-width: 447px
+				h2
+					font-weight: bold
+					color: #fff
+					font-size: 44px
+				p
+					color: #fff
+		.slick-dots
+			left: 100%
+			top: 58%
 			width: 100%
+			max-width: 200px
+			padding: 20px 0px 0px 38px
+			li
+				display: block
+				height: 29px
+				position: relative
+				a
+					color: rgba(0,0,0,.5)
+					font-weight: bold
+					transition: all .5s
+					&:before
+						content: ""
+						position: absolute
+						top: 10px
+						left: 43px
+						height: 2px
+						background: #000
+						width: 0px
+						transition: all .5s
+					&:hover
+						text-decoration: none
+						color: rgba(0,0,0,1)
+						&:before
+							width: 70px
+				&.slick-active
+					a
+						color: rgba(0,0,0,.5)
+						&:before
+							width: 70px
+
+						
+		.btnSlide
 			position: absolute
-			max-width: 51%
 			bottom: 0
-			left: 12%
-		.ele_2
-			display: block
-			width: 47%
-			height: 57%
-			background: #05c0e3
-			float: right
+			left: -19px
+			text-align: center
+			z-index: 999
+			padding: 0
+			height: 74px
+			.txt
+				display: inline-block
+				background: $colorP
+				color: #fff
+				vertical-align: top
+				padding: 27px 42px
+			.img
+				display: inline-block
+				background: #fff
+				padding: 9px 6px
 #filterModules
 	margin: 79px 0px 56px 0px
 	ul

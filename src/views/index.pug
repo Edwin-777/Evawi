@@ -4,15 +4,42 @@ block vars
 block content
 	// main
 	main#contenPrimary
-		#primarySlide
-			.slide_1
-				.ele_2(data-animation-in="fadeIn", data-delay-in="1")
-				img.ele_1(src="img/slide1/ele_1.jpg", data-animation-in="fadeInLeft",alt="")
-				.btnSlide(data-animation-in="fadeInUp", data-delay-in="2")
+		#socialHome
+			ul
+				li
 					a(href="#")
-						span.txt LEARN MORE
-						span.img
-							img(src="img/btnSlide.png", alt="")
+						i.fa.fa-facebook-official(aria-hidden="true")
+				li
+					a(href="#")
+						i.fa.fa-instagram(aria-hidden="true")
+				li
+					a(href="#")
+						i.fa.fa-youtube-play(aria-hidden="true")
+				li
+					a(href="#")
+						i.fa.fa-twitter(aria-hidden="true")
+		#primarySlide
+			.wrappslide
+				.item
+					.btnSlide(data-animation-in="fadeInUp", data-delay-in="1")
+						a(href="#")
+							span.txt LEARN MORE
+							span.img
+								img(src="img/btnSlide.png", alt="")
+					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
+					.wrappTxt(data-animation-in="fadeInUp")
+						h2 Start by Believing
+						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
+				.item
+					.btnSlide(data-animation-in="fadeInUp", data-delay-in="1")
+						a(href="#")
+							span.txt LEARN MORE
+							span.img
+								img(src="img/btnSlide.png", alt="")
+					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
+					.wrappTxt(data-animation-in="fadeInUp")
+						h2 Start by Believing
+						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
 		.container
 			.row
 				.col-md-12
