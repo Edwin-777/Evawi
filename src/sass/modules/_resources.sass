@@ -1,0 +1,93 @@
+.resouces_aricle
+	background: #f2f3ee
+	margin-top: 50px
+	.article-left
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			border-top: 32px solid transparent
+			border-bottom: 32px solid transparent
+			border-right: 29px solid #f2f3ee
+	.article-right
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			border-top: 32px solid transparent
+			border-bottom: 32px solid transparent
+			border-left: 29px solid #f2f3ee
+	article
+		padding: 7% 11%	
+		h2
+			color: $colorP
+			font-weight: bold
+		p
+			color: $txtColor
+		a
+			display: inline-block
+			color: #fff
+			margin-top: 30px
+			transition: all .5s
+			text-align: center
+			padding: 14px 34px
+			border-radius: 82px				
+		&.violet
+			h2
+				color: $colorP
+			a
+				background: $colorP
+				&:hover
+					background: $colorS
+					text-decoration: none
+		&.blue
+			h2
+				color: $colorS
+			a
+				background: $colorS
+				&:hover
+					background: $colorP
+					text-decoration: none
+
+.resouces_modules
+	position: relative
+	padding-left: 91px
+	margin-top: 80px
+	padding-bottom: 80px
+	img
+		position: absolute
+		width: 79px
+		left: 2px
+		top: 0
+	h2
+		color: $txtColor
+		font-weight: bold
+		margin-bottom: 30px
+	p
+		color: $txtColor
+		text-align: justify
+	a
+		position: absolute
+		transform: rotate(90deg)
+		left: -46px
+		bottom: 121px
+		font-weight: bold
+		width: 170px
+		transition: all .5s
+		width: 170px
+		i
+			margin-left: 10px
+		&:hover
+			text-decoration: none
+			i
+				margin-left: 20px
+				transition: all .5s
+

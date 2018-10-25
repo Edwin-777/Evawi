@@ -1,45 +1,32 @@
-extends partials/header.pug
+extends layout/app.pug
 block vars
 	- var titlePage = 'Home Page';
 block content
 	// main
 	main#contenPrimary
-		#socialHome
-			ul
-				li
-					a(href="#")
-						i.fa.fa-facebook-official(aria-hidden="true")
-				li
-					a(href="#")
-						i.fa.fa-instagram(aria-hidden="true")
-				li
-					a(href="#")
-						i.fa.fa-youtube-play(aria-hidden="true")
-				li
-					a(href="#")
-						i.fa.fa-twitter(aria-hidden="true")
+		include partials/socialTop
 		#primarySlide
 			.wrappslide
 				.item
+					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
+					.wrappTxt(data-animation-in="fadeInUp")
+						h2 Start by Believing
+						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
 					.btnSlide(data-animation-in="fadeInUp", data-delay-in="1")
 						a(href="#")
 							span.txt LEARN MORE
 							span.img
 								img(src="img/btnSlide.png", alt="")
-					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
-					.wrappTxt(data-animation-in="fadeInUp")
-						h2 Start by Believing
-						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
 				.item
+					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
+					.wrappTxt(data-animation-in="fadeInUp")
+						h2 Start by Believing
+						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
 					.btnSlide(data-animation-in="fadeInUp", data-delay-in="1")
 						a(href="#")
 							span.txt LEARN MORE
 							span.img
 								img(src="img/btnSlide.png", alt="")
-					img.ele_1(src="img/slide1/imgSlide_1.jpg", data-animation-in="fadeInLeft",alt="")
-					.wrappTxt(data-animation-in="fadeInUp")
-						h2 Start by Believing
-						p CAMPAIGN REDUCES FEAR AND STIGMA OF SEXUAL ASSAULT DISCLOSURES
 		.container
 			.row
 				.col-md-12
@@ -53,7 +40,7 @@ block content
 									a(href="#", data-panel="training") TRAINING
 		.container.modulesWrapp.module-conference
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_03.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -61,7 +48,7 @@ block content
 						h2 REGIONAL
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_04.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -69,7 +56,7 @@ block content
 						h2 PAST CONFERENCES
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_05.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -77,7 +64,7 @@ block content
 						h2 TESTIMONIALS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_06.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -86,7 +73,7 @@ block content
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_08.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -94,7 +81,7 @@ block content
 						h2 INSTITUTE
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_09.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -102,7 +89,7 @@ block content
 						h2 ACCREDITATION
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_10.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -110,7 +97,7 @@ block content
 						h2 AWARDS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_11.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -120,7 +107,7 @@ block content
 						a(href="#") READ MORE
 		.container.modulesWrapp.module-regional.inactive
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_04.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -128,7 +115,7 @@ block content
 						h2 PAST CONFERENCES
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_06.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -136,7 +123,7 @@ block content
 						h2 HANDOUTS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_05.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -144,7 +131,7 @@ block content
 						h2 TESTIMONIALS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_03.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -153,7 +140,7 @@ block content
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_08.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -161,7 +148,7 @@ block content
 						h2 INSTITUTE
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_09.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -169,7 +156,7 @@ block content
 						h2 ACCREDITATION
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_10.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -177,7 +164,7 @@ block content
 						h2 AWARDS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_11.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -187,7 +174,7 @@ block content
 						a(href="#") READ MORE
 		.container.modulesWrapp.module-training.inactive
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_06.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -195,7 +182,7 @@ block content
 						h2 HANDOUTS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_04.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -203,7 +190,7 @@ block content
 						h2 PAST CONFERENCES
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_03.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -211,17 +198,16 @@ block content
 						h2 REGIONAL
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE			
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_05.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
 					.info
 						h2 TESTIMONIALS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
-						a(href="#") READ MORE
-				
+						a(href="#") READ MORE				
 			.row
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_08.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -229,7 +215,7 @@ block content
 						h2 INSTITUTE
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_09.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -237,7 +223,7 @@ block content
 						h2 ACCREDITATION
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_10.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -245,7 +231,7 @@ block content
 						h2 AWARDS
 						p I believe that the trainers used by EVAWI are passionate about what they do, they are an amazing resource, and the education provided is top-notch!
 						a(href="#") READ MORE
-				.col-md-3.module
+				.col-md-3.col-sm-6.col-xs-6.module
 					img.bgModule(src="img/module_home_11.jpg", alt="")
 					a.arrow(href="#")
 						img(src="img/moduleArrow.png", alt="")
@@ -336,5 +322,3 @@ block content
 					.mod_4
 						h2 Request technical assistance
 						a(href="#") READ MORE
-	// End Main
-	include partials/footer.pug

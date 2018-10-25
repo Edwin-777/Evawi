@@ -1,0 +1,9 @@
+mixin internalBanner(img, title, txt)
+	.container-fluid.internalBanner(style="background-image:url("+img+")")
+		include ../partials/socialTop
+		.row
+			.col-md-3.col-md-offset-2
+				h2=title
+			.col-md-3
+				p=txt
+

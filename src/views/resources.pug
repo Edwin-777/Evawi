@@ -1,0 +1,52 @@
+extends layout/app.pug
+block vars
+	- var titlePage = 'Resources';
+	- var isInternal = true;
+block content
+	// main
+	main#contenPrimary
+		+internalBanner("img/bannerResources.jpg","Resources","EVAWI is dedicated to improving the criminal justice and community response to violence against women on every level — within the professions tasked with responding to victims and across society as a whole.  In this section, you will find a variety of resources and tools designed to meet this goal. ")
+		.container.resouces_aricle
+			.row
+				.col-md-6.noPadding.article-left
+					img.img-responsive.center-block(src="img/resouces_aricle.jpg")
+				.col-md-6
+					article.violet
+						h2 Best Practices
+						p  For over 10 years, EVAWI has produced training materials and other resources, as well as collecting materials from across the country and around the world – to help professionals improve the criminal justice and community response to violence against women.
+						a(href="#") READ MORE
+		.container.resouces_aricle
+			.row
+				.col-md-6.col-md-push-6.noPadding.article-right
+					img.img-responsive.center-block(src="img/resouces_aricle_2.jpg")
+				.col-md-6.col-md-pull-6
+					article.blue
+						h2 Forensic Compliance
+						p Many professionals across the country are aware of the challenges facing local jurisdictions in establishing a community response system that is compliant with the provisions of VAWA 2005.  EVAWI is currently providing technical assistance on this critically important topic. 
+						a(href="#") READ MORE
+		.container.resouces_aricle
+			.row
+				.col-md-6.noPadding.article-left
+					img.img-responsive.center-block(src="img/resouces_aricle_3.jpg")
+				.col-md-6
+					article.violet
+						h2 Webinars & Archive
+						p For over 10 years, EVAWI has produced training materials and other resources, as well as collecting materials from across the country and around the world – to help professionals improve the criminal justice and community response to violence against women.
+
+						a(href="#") READ MORE
+		.container
+			.row
+				.col-md-6
+					.resouces_modules
+						img(src="img/resource_module_1.png")
+						h2 Online Training <br>Institute
+						p EVAWI developed the OnLine Training Institute (OLTI) to provide state-of-the art training on the criminal justice and community response to sexual assault. Training particularly focuses on those crimes committed by someone who is known to the victim (i.e., non-strangers).  Participants in the OLTI work through training modules and then apply this newly acquired knowledge in realistic and interactive scenarios, as well as assessment methods such as quizzes, tests, and case studies.
+						a(href="#") READ MORE 
+							i.fa.fa-long-arrow-right(aria-hidden="true")
+				.col-md-6
+					.resouces_modules
+						img(src="img/resource_module_2.png")
+						h2 Making A <br>Difference
+						p The purpose of the project is to "Make a Difference" by challenging the legal process in both the U.S. and Canada to more effectively prosecute sex offenders.  It is clear based on existing research that the criminal justice systems in the U.S. and Canada -- as in other countries -- are less likely to prosecute incidents of sexual assault if there is relationship between the victim and the accused, there is no sign of physical injury, and the suspect is not otherwise associated with criminal activity. However, these three characteristics are in fact typical for most adult sexual assaults. The Making a Difference project was designed to address this problem, by facilitating reform in the U.S. and Canadian legal systems -- to challenge the status quo and more effectively prosecute adult and adolescent sexual assaults.
+						a(href="#") READ MORE 
+							i.fa.fa-long-arrow-right(aria-hidden="true")

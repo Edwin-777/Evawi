@@ -1,5 +1,5 @@
-@import 'config'
 @import 'mixin'
+@import 'config'
 @import 'helpers'
 
 #contenPrimary
@@ -7,11 +7,14 @@
 		margin-top: 150px
 #socialHome
 	position: absolute
-	top: 133px
 	left: 4.2%
 	z-index: 9999
 	text-align: center
 	width: 20px
+	top: 50%
+	transform: translateY(-50%)
+	+table()
+		display: none
 	ul 
 		list-style: none
 		padding: 0
@@ -20,40 +23,41 @@
 			margin: 13px 0px
 			a
 				color: #000
-				font-size: 19px
+				font-size: 23px
 				transition: all .5s
 				&:hover
 					text-decoration: none
 					color: $colorP
-
-
 #primarySlide
-	+bgSection("../img/slide1/bg.jpg", cover, false)
+	+bgSection("../img/slide1/bg.jpg", cover, true)
 	display: block
 	position: relative
 	top: 0
 	padding-top: 232px
 	padding-left: 12%
+	height: 100%
 	+table()
 		display: none
 	.wrappslide
 		display: block
-		width: 100%
-		max-width: 800px
+		width: 68%
 		.item
 			img
 				display: block
-				width: 100%
+				width: 95%
+				float: right
 			.wrappTxt
 				position: absolute
-				top: 0
-				padding: 24px
+				top: 2%
+				left: 9%
 				width: 100%
 				max-width: 447px
 				h2
 					font-weight: bold
 					color: #fff
-					font-size: 44px
+					font-size: 61px
+					font-family: $fontS
+					font-weight: 400
 				p
 					color: #fff
 		.slick-dots
@@ -88,17 +92,16 @@
 					a
 						color: rgba(0,0,0,.5)
 						&:before
-							width: 70px
-
-						
+							width: 70px						
 		.btnSlide
-			position: absolute
-			bottom: 0
-			left: -19px
+			position: relative
+			bottom: 26px
+			left: 0
 			text-align: center
-			z-index: 999
 			padding: 0
 			height: 74px
+			float: left
+			box-shadow: 6px 4px 11px -2px
 			.txt
 				display: inline-block
 				background: $colorP
@@ -275,6 +278,9 @@
 		margin: 0
 		+table()
 			margin-bottom: 15px
+		img
+			+table()
+				float: left
 		i
 			color: rgba(0, 0, 0, 0.28)
 			position: absolute
@@ -298,6 +304,8 @@
 		.mod_1_1
 			background: $colorP
 			padding-left: 19px
+			+table()
+				padding-bottom: 10px
 			h2
 				color: #fff
 				margin-top: 92%
@@ -316,6 +324,9 @@
 					padding-left: 20px
 		.mod_1_2
 			padding: 0
+			width: 100%
+			img
+				width: 100%
 			a
 				position: absolute
 				top: 16px
@@ -335,7 +346,9 @@
 			padding: 0
 			padding-right: 5px
 			+table()
-				padding: 15px
+				padding-right: 0
+			img
+				width: 100%
 			h2
 				color: #fff
 				position: absolute
@@ -351,7 +364,9 @@
 			padding: 0
 			padding-left: 8px
 			+table()
-				padding: 15px
+				padding-left: 0
+			img
+				width: 100%
 			i
 				color: #fff
 				position: absolute
@@ -364,6 +379,11 @@
 				bottom: 35px
 				left: 96px
 	.mod_3
+		height: 614px
+		+table()
+			margin-top: 20px
+		img
+			width: 100%
 		.slick-dots
 			bottom: 8px
 			li

@@ -1,3 +1,4 @@
+include ../mixins/general
 doctype html
 html(lang='en')
 	block vars
@@ -16,6 +17,7 @@ html(lang='en')
 		link(href='css/libraries/aos.css', rel='stylesheet')
 		link(href='css/libraries/slick.css', rel='stylesheet')
 		link(href='css/libraries/slick-theme.css', rel='stylesheet')
+		link(href='css/libraries/slick-lightbox.css', rel='stylesheet')
 		link(href='css/libraries/normalize.css', rel='stylesheet')
 		//Custom styles for this template
 		link(href='css/main.css', rel='stylesheet')
@@ -25,7 +27,7 @@ html(lang='en')
 		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 	body
 		// header
-		header#primaryHeader
+		header#primaryHeader(class=isInternal ? 'whiteFormat' : '')
 			.container-fluid
 				.row
 					.col-md-4
@@ -86,8 +88,59 @@ html(lang='en')
 					.col-md-4
 						a(href="/")
 							img.img-responsive.center-block(src="img/logo.png")
-					.col-md-4
+					.col-md-4.hidden-xs.hidden-sm
 						#search
 							i.fa.fa-search(aria-hidden='true')
-		// End Header
 		block content
+		footer#primaryFooter
+			.container
+				.col-md-3
+					h2 VISION STATEMENT
+					p WE ENVISION A WORLD WHERE GENDER- BASED VIOLENCE IS UNACCEPTABLE,
+					a.link_1(href="#") VICTIMLINK
+					a.link_2(href="#") APPLY NOW
+				.col-md-3
+					h2 START BY BELIEVING
+					p FOR MORE INFORMATION ON HOW YOU CAN LAUNCH A CAMPAIGN, PLEASE VISIT OUR START BY BELIEVING WEBSITE.
+					span 
+						a(href="#") www.startbybelieving.org
+				.col-md-3
+					h2 TECHNICAL ASSISTANCE
+					p WITH SUPPORT FROM THE OFFICE ON VIOLENCE AGAINST WOMEN (OVW),
+					a.link_2(href="#") 
+						i.fa.fa-plus-circle(aria-hidden="true")
+						| ASSISTANCE
+				.col-md-3
+					h2 FEATURED LINKS
+					ul
+						li FROM THE TRENCHES OF EVAWI BLOG
+						li FORENSIC COMPLIANCE
+						li BEST PRACTICES
+						li ARCHIVED WEBINARS 
+						li ANNUAL REPORT
+					#socialFooter
+						ul
+							li
+								a(href="#")
+									i.fa.fa-facebook-official(aria-hidden="true")
+							li
+								a(href="#")
+									i.fa.fa-instagram(aria-hidden="true")
+							li
+								a(href="#")
+									i.fa.fa-youtube-play(aria-hidden="true")
+							li
+								a(href="#")
+									i.fa.fa-twitter(aria-hidden="true")
+		#afterFooter
+			p © 2018 Evawi - Digitalbarr
+		//Bootstrap core JavaScript
+		//Placed at the end of the document so the pages load faster
+		script(src='js/libraries/jquery-3.3.1.min.js')
+		script(src='js/libraries/bootstrap.min.js')
+		script(src='js/libraries/slick.min.js')
+		script(src='js/libraries/slick-animation.min.js')
+		script(src='js/libraries/slick-lightbox.min.js')
+		script(src='js/libraries/aos.js')
+		script(src='https://use.fontawesome.com/c23f3f5163.js')
+		script(src='js/scripts.js')

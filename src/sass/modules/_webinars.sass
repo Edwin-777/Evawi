@@ -1,0 +1,91 @@
+.webinars_aricle
+	margin-top: 50px
+	border-bottom: 3px solid #f2f3ee;
+	padding-bottom: 50px
+	&.active
+		background: #f2f3ee
+		border-bottom: 0px solid #f2f3ee;
+		padding-bottom: 0px
+		.col-md-6:nth-child(1)
+			position: relative
+			&:before
+				content: "NEXT WEBINAR"
+				display: block
+				width: 163px
+				height: 30px
+				border-left: 7px solid #73308f
+				margin-top: 6px
+				position: absolute
+				padding-top: 5px
+				padding-left: 13px
+				color: #73308f
+				font-weight: bold
+				top: 22px
+				left: 0
+		article
+			padding: 7% 3%
+	article
+		.day
+			display: block
+			color: $colorP
+			font-weight: bold
+			text-transform: uppercase
+			&:after
+				content: ""
+				display: block
+				width: 34px
+				height: 2px
+				background: $colorP
+				margin-top: 6px
+		h2
+			color: $colorP
+			font-weight: bold
+		.date
+			font-weight: bold
+			color: $txtColor
+		ul
+			padding: 0
+			margin-top: 20px
+			margin-bottom: 20px
+			li
+				display: inline-block
+				margin: 0px 18px 0px 0px
+				color: $txtColor
+				position: relative
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					top: 50%
+					right: -15px
+					transform: translateY(-50%)
+					background: $txtColor
+					width: 5px
+					height: 5px
+					border-radius: 50%
+				&:last-child
+					&:before
+						display: none
+				strong
+					font-weight: bold
+					border-bottom: 2px solid  
+		.wrapp_btn
+			margin-top: 50px
+			a.violet
+				display: inline-block
+				color: #fff
+				margin-top: 30px
+				transition: all .5s
+				text-align: center
+				padding: 14px 34px
+				border-radius: 82px
+				background: $colorP
+				margin-right: 20px
+				&:hover
+					background: $colorS
+					text-decoration: none
+			a.blue
+				@extend a.violet
+				background: $colorS
+				&:hover
+					background: $colorP

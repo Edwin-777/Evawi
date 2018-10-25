@@ -1,0 +1,115 @@
+.libraryMenuTop
+	background: #f2f3ee
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+		li
+			padding: 21px 2%
+			display: inline-block
+			transition: all .5s
+			img
+				width: 100%
+				max-width: 50px
+			span
+				display: block
+				color: $colorS
+				transition: all .5s
+				font-weight: bold
+				margin-top: 10px
+			&:hover
+				background: $colorP
+				a
+					text-decoration: none
+				span
+					color: #fff
+					text-decoration: none
+.libraryMenuLeft
+	+table()
+		display: none
+	h3
+		color: $colorS
+		font-weight: bold
+		margin-bottom: 30px
+	ul
+		padding: 0
+		list-style: none
+		li
+			margin-bottom: 10px
+			a
+				color: $txtColor
+				text-transform: uppercase
+				font-weight: bold
+				display: block
+				transition: all .5s
+				border-left: 0px solid $colorP
+				&:hover
+					color: $colorP
+					text-decoration: none
+					padding-left: 7px
+					border-left: 3px solid $colorP
+				&.active
+					color: $colorP
+					text-decoration: none
+					padding-left: 7px
+					border-left: 3px solid $colorP
+.title_library
+	color: $colorS
+	font-size: 40px
+	font-weight: bold
+	margin-bottom: 20px
+	+table()
+		text-align: center
+.article_library
+	position: relative
+	border-bottom: 3px solid #f2f3ee
+	padding-bottom: 43px
+	padding-top: 44px
+	&:before
+		content: "\f0c1"
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		text-decoration: inherit
+		display: inline-block
+		background: rgba(115, 48, 143, 0.43)
+		color: $colorP
+		width: 50px
+		height: 50px
+		text-align: center
+		border-radius: 50%
+		padding-top: 8px
+		font-size: 26px
+		box-shadow: 0px 0px 0px 9px rgba(115, 48, 143, 0.21)
+		vertical-align: top
+		+table()
+			display: none
+	h2
+		padding-left: 20px
+		color: $colorP
+		display: inline-block
+		width: 65%
+		font-size: 26px
+		font-weight: bold
+		margin: 0
+		+table()
+			display: block
+			width: 100%
+			text-align: center
+	a
+		background: $colorP
+		color: #fff
+		display: inline-block
+		width: 26%
+		text-align: center
+		padding: 14px 0px
+		border-radius: 47px
+		vertical-align: top
+		transition: all .5s
+		&:hover
+			background: $colorS
+			text-decoration: none
+		+table()
+			display: block
+			width: 100%
+			margin-top: 20px

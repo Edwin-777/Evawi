@@ -1,0 +1,101 @@
+extends layout/app.pug
+block vars
+	- var titlePage = 'Donate';
+	- var isInternal = true;
+block content
+	// main
+	main#contenPrimary
+		+internalBanner("img/bannerDonate.jpg","Resources","EVAWI is dedicated to improving the criminal justice and community response to violence against women on every level — within the professions tasked with responding to victims and across society as a whole.  In this section, you will find a variety of resources and tools designed to meet this goal. ")
+		.container
+			.row
+				.col-md-12
+					.slde_donate
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_1.jpg", alt="")
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_2.jpg", alt="")
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_3.jpg", alt="")
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_1.jpg", alt="")
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_2.jpg", alt="")
+						.item
+							a(href="") READ MORE
+								i.fa.fa-link(aria-hidden="true")
+							img.img-responsive.center-block(src="img/slide_donate_3.jpg", alt="")
+					.title_slide_donate
+						p part-1
+						p part-2
+						p part-3
+						p part-4
+						p part-5
+						p part-6
+		.donate_counter
+			.container
+				.col-md-3
+					h2 360
+					p donations
+				.col-md-3
+					h2 200
+					p days
+				.col-md-3
+					h2 500
+					p charitable souls
+				.col-md-3
+					h2 320
+					p companies
+		.donate_payment
+			.container
+				.col-md-8.col-md-offset-2
+					.wrapperForm
+						h2 Make a Difference!
+						h3 Billing Information
+						.control_imput.type_donation
+							p Donation Type:
+							.check_type_1
+								input(type="radio",value="One time",name="type_donation")
+								i.fa.fa-toggle-off(aria-hidden="true")
+							label One-Time
+							.check_type_1
+								input(type="radio",value="Recurring",name="type_donation")
+								i.fa.fa-toggle-off(aria-hidden="true")
+							label Recurring
+						.control_imput.border
+							p *Amount Of Contribution:
+							.wrapper_amount
+								i.fa.fa-usd(aria-hidden="true")
+								input.amount(type="text",name="amount",value="10.00",disabled)
+								span.add
+									i.fa.fa-plus(aria-hidden="true")
+								span.subtract
+									i.fa.fa-minus(aria-hidden="true")
+							.wrapper_other
+								.wrapCheck
+									input.check_other(type="checkbox",name="check_other")
+									i.fa.fa-square-o
+								label Other
+								i.fa.fa-usd(aria-hidden="true")
+								input.othe_amount(type="number",name="other_amount")
+						.control_imput
+							a(href="") NEXT STEP
+								i.fa.fa-angle-right(aria-hidden="true")
+
+
+							
+
+
+
+
+
+			
