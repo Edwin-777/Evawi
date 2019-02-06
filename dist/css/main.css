@@ -296,7 +296,7 @@ body {
     display: block;
     padding: 0px 18px;
     text-align: center;
-    height: 52%;
+    height: 56%;
     padding-top: 127px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
@@ -1110,7 +1110,7 @@ a[href*="facebook"], a[href*="instagram"], a[href*="youtube"], a[href*="pinteres
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 200px 0px;
+  padding: 70px 0px;
   position: relative;
   margin-bottom: -50px; }
   .donate_payment .wrapperForm {
@@ -1488,7 +1488,7 @@ a[href*="facebook"], a[href*="instagram"], a[href*="youtube"], a[href*="pinteres
     display: inline-block;
     width: 26%;
     text-align: center;
-    padding: 14px 0px;
+    padding: 9px 0px;
     -webkit-border-radius: 47px;
     -moz-border-radius: 47px;
     border-radius: 47px;
@@ -1496,7 +1496,8 @@ a[href*="facebook"], a[href*="instagram"], a[href*="youtube"], a[href*="pinteres
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     -moz-transition: all .5s;
-    transition: all .5s; }
+    transition: all .5s;
+    margin-top: 10px; }
     .article_library a:hover {
       background: #2695c9;
       text-decoration: none; }
